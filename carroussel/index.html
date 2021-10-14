@@ -9,34 +9,43 @@
   </head>
   <body>
     <div id="caroussel-container">
-      <div class="myslide">
+      <div class="myslide fade">
         <div class="number-img">1 / 4</div>
         <img
           class="slideImg"
           src="https://colorlib.com/wp/wp-content/uploads/sites/2/featured_electrician-website-templates.jpg"
         />
       </div>
-      <div class="myslide">
+      <div class="myslide fade">
         <div class="number-img">2 / 4</div>
         <img
           class="slideImg"
           src="https://uicookies.com/wp-content/uploads/2019/10/free-travel-agency-website-templates-1000x750.jpg"
         />
       </div>
-      <div class="myslide">
+      <div class="myslide fade">
         <div class="number-img">3 / 4</div>
         <img
           class="slideImg"
           src="https://citronfrappe.fr/wp-content/uploads/2018/10/b5beb066-d600-43cd-88d4-f8d4f08ab359.jpeg"
         />
       </div>
-      <div class="myslide">
+      <div class="myslide fade">
         <div class="number-img">4 / 4</div>
         <img
           class="slideImg"
           src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/c4b12722f50791fe162dd5a27afa217ced8d5bd6b10d8d1c80e5ad0490eff63f1622375935018.jpg"
         />
       </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
