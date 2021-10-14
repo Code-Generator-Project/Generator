@@ -8,19 +8,86 @@
     <title>Website Creator</title>
   </head>
   <body>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a id="nav" href="#news">About</a></li>
+      <li><a id="nav" href="#news">Packs</a></li>
+      <li><a id="nav" href="#contact">Contact</a></li>
+    </ul>
     <h1></h1>
     <div id="main-container">
-      <div id="templates-container">
-        <div id="template1" class="template">
-          <img src="./pics/templats/template1.jpg" />
-        </div>
-        <div id="template2" class="template">
-          <img src="./pics/templats/template2.jpg" />
-        </div>
-        <div id="template3" class="template">
-          <img src="./pics/templats/template3.jpg" />
-        </div>
+      <table style="width: 150px">
+        <tr>
+          <td onclick="style1()">
+            <img src="./pics/templats/template1.jpg" />
+          </td>
+          <td onclick="style2()">
+            <img src="./pics/templats/template2.jpg" />
+          </td>
+        </tr>
+        <tr>
+          <td onclick="style3()">
+            <img src="./pics/templats/template3.jpg" />
+          </td>
+          <td onclick="style4()">
+            <img src="./pics/templats/template3.jpg" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="form-container">
+      <div>
+        <label><b>Company Name</b></label
+        ><br />
+        <input
+          id="cnID"
+          class="input"
+          type="text"
+          placeholder="Enter Company Name"
+        />
       </div>
+      <div>
+        <label><b>Description</b></label
+        ><br />
+        <input
+          id="descID"
+          class="input"
+          type="text"
+          placeholder="Enter Description"
+        />
+      </div>
+      <div>
+        <label><b>Services</b></label
+        ><br />
+        <input
+          id="servID"
+          class="input"
+          type="text"
+          placeholder="Enter Services"
+        />
+      </div>
+      <div>
+        <label><b>Image src</b></label
+        ><br />
+        <input
+          id="imgID"
+          class="input"
+          type="text"
+          placeholder="Enter Image src"
+        />
+      </div>
+      <div>
+        <label><b>Carroussel</b></label
+        ><br />
+        <input id="car1ID" class="input" type="text" placeholder="Image1 src" />
+      </div>
+      <div>
+        <input id="car2ID" class="input" type="text" placeholder="Image2 src" />
+      </div>
+      <div>
+        <input id="car3ID" class="input" type="text" placeholder="Image3 src" />
+      </div>
+      <button id="btn">Submit</button>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
