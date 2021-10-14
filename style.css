@@ -17,7 +17,7 @@ body {
 }
 img {
   width: 600px;
-  height: 550px;
+  height: 510px;
   border-radius: 20px;
   box-shadow: 11px 10px 9px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 11px 10px 9px 0px rgba(0, 0, 0, 0.75);
@@ -81,7 +81,6 @@ li a:hover {
   margin-bottom: 8%;
   margin-right: 35%;
   background-color: rgb(48, 48, 48);
-  /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F25%2F5%2FqB3eHs.jpg&f=1&nofb=1"); */
   margin-left: 35%;
   color: #03e79c;
   padding: 10px;
