@@ -5,7 +5,7 @@ function changeStyle(n) {
 
 $(".form-container").hide();
 function style1() {
-  $("table").hide(1000);
+  $("table").hide(1500);
   $(".form-container").show(1500);
 }
 
