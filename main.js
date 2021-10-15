@@ -15,6 +15,7 @@ showSlides();
 
 $(".form-container").hide();
 $("#company-infos").hide();
+$("#packs-table").hide()
 function style1() {
   $("table").hide(1500);
   $(".form-container").show(1500);
@@ -89,4 +90,18 @@ function goHome() {
   $("#caroussel-container").show(1000);
   $("table").show(1000);
   $(".form-container").hide();
+  $("#code-container").hide();
+  $("#packs-table").hide()
+
+}
+
+function goPacks() {
+  changeStyle(0)
+  $("#caroussel-container").hide(1000);
+  $(".presentation").hide(1000);
+  $(".form-container").hide();
+  $("#code-container").hide();
+  $("#company-infos").hide(1000);
+  $("table").hide(1000);
+  $("#packs-table").show(1000)
 }

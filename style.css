@@ -1,7 +1,7 @@
 body {
   max-width: 100%;
   background-image: linear-gradient(
-    to bottom right,
+    to right,
     #39a0db,
     rgb(66, 223, 189)
   );
@@ -141,7 +141,6 @@ li a:hover {
   max-width: 50%;
   margin-top: 30px;
   position: absolute;
-  /* margin: auto; */
   margin-left: 500px;
 }
 .myslide {
@@ -191,4 +190,82 @@ li a:hover {
 .desc {
   color: rgb(51, 51, 51);
   margin-top: -9px;
+}
+.pack-label{
+  background-color: white;
+  height: 350px;
+  text-align: center;
+  border-radius: 20px 30px;
+  margin-top: -90px;
+}
+.pack-label:hover {
+  transform: scale(1.04, 1.04);
+  transition: 0.3s transform;
+}
+.pack-type{
+  height: 60px;
+  padding-top: 30px;
+  font-size: 25px;
+  border-radius: 20px 30px;
+
+}
+#bronze{
+  background-image: linear-gradient(
+    to right,
+    #f7f7f7,
+    brown
+  );
+}
+#silver{
+  background-image: linear-gradient(
+    to right,
+    #f7f7f7,
+    silver
+  );
+}
+#gold{
+  background-image: linear-gradient(
+    to right,
+    #f7f7f7,
+    gold
+  );
+}
+.pack-disc{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #575757;
+}
+#packs-table{
+  margin-left: 260px;
+}
+.p-img{
+  height: 150px;
+  width: 150px;
+}
+.p-button {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px 12px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+  margin-top: -10px;
+  width: 180px;
+}
+.p-button:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+.p-button:active {
+	position:relative;
+	top:1px;
 }
