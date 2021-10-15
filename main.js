@@ -2,7 +2,7 @@
 var arrayStyle = [
   "style.css",
   "styleTemplate1.css",
-  "styleTemplate2.css",
+  "styleTamplate2.css",
   "styleTemplate3.css",
 ];
 // function that chnage the href of the css link
@@ -34,12 +34,16 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 2500); // Change image every 2.5 seconds
 }
-
-function showForm() {
+var n=0
+function showForm(elem) {
+  n=Number(elem.getAttribute("id"));
+  console.log(n);
+  $(".presentation").hide()
   $("table").hide(1000);
   $("#caroussel-container").hide(1000);
   $(".form-container").show(1500);
 }
+
 
 // function to change the img src of the slide show
 var imgIds=["#img1","#img2","#img3","#img4"]
@@ -52,7 +56,7 @@ function slideShowUpdate(array) {
 // function to fill the tamplate elements with the input values 
 function showTemplate() {
   $(".form-container").hide();
-  changeStyle(1)
+  changeStyle(n)
   $("#cnID-template").text($("#cnID").val())
   $("#desID-template").text($("#descID").val())
   $("#servID-template").text($("#servID").val())
@@ -71,13 +75,14 @@ function generateCode() {
 
 // an array containes the images of the home slide show
 slideHome=[
-  "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
-  "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
-  "https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-  "https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+  "./pics/01.png",
+  "./pics/02.png",
+  "./pics/03.png",
+  "./pics/04.png"
 ]
 // function takes you back to the home page  
 function goHome() {
+  $(".presentation").show(1000)
   changeStyle(0)
   $("#company-infos").hide(1000);
   slideShowUpdate(slideHome);
@@ -85,5 +90,3 @@ function goHome() {
   $("table").show(1000);
   $(".form-container").hide();
 }
-
-

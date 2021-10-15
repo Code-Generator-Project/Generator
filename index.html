@@ -7,11 +7,12 @@
     <title>Website Creator</title>
   </head>
   <body>
-    <link rel="stylesheet" href="/style.css" /><!-- Nav barre -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Nav barre -->
     <ul>
       <li><a class="active" href="#home" onclick="goHome(0)">Home</a></li>
       <li>
-        <a class="nav" href="#news" id="terma" onclick="getClass()">About</a>
+        <a class="nav" href="#news">About</a>
       </li>
       <li><a class="nav" href="#news">Packs</a></li>
       <li><a class="nav" href="#contact">Contact</a></li>
@@ -22,7 +23,6 @@
       <div id="desc-container">
         <div class="leftDIv">
           <h1 id="cnID-template"></h1>
-          <div class="text-label">Description</div>
           <p id="desID-template"></p>
           <img id="imgID-template" src="" />
         </div>
@@ -38,52 +38,46 @@
     <!-- caroussel-container -->
     <div id="caroussel-container">
       <div class="myslide fade">
-        <img
-          class="slideImg"
-          id="img1"
-          src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-        />
+        <img class="slideImg" id="img1" src="./pics/01.png" />
       </div>
       <div class="myslide fade">
-        <img
-          class="slideImg"
-          id="img2"
-          src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-        />
+        <img class="slideImg" id="img2" src="./pics/02.png" />
       </div>
       <div class="myslide fade">
-        <img
-          class="slideImg"
-          id="img3"
-          src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
-        />
+        <img class="slideImg" id="img3" src="./pics/03.png" />
       </div>
       <div class="myslide fade">
-        <img
-          class="slideImg"
-          id="img4"
-          src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-        />
+        <img class="slideImg" id="img4" src="./pics/04.png" />
       </div>
     </div>
     <br />
+    <div class="presentation">
+      <h1 class="title">Best web templates</h1>
+      <p class="desc">
+        All of the following free CSS3 and HTML5 responsive web templates are
+        free for you to use and modify for your own needs, just plug in your own
+        content and you’re away! All I ask in return for using any of these
+        templates is a link back to this site
+      </p>
+    </div>
+
     <!-- tempates container -->
     <div id="main-container">
       <table style="width: 150px">
         <tr>
-          <td onclick="showForm()">
-            <img src="./pics/ourTemplate1.jpg" />
+          <td id="1" onclick="showForm(this)">
+            <img class="tabel-img" src="./pics/ourTemplate1.jpg" />
           </td>
-          <td onclick="showForm()">
-            <img src="./pics/ourtemplate2.jpg" />
+          <td id="2" onclick="showForm(this)">
+            <img class="tabel-img" src="./pics/ourtemplate2.jpg" />
           </td>
         </tr>
         <tr>
-          <td onclick="showForm()">
-            <img src="./pics/temptest1.jpg" />
+          <td id="3" onclick="showForm(this)">
+            <img class="tabel-img" src="./pics/temptest1.jpg" />
           </td>
-          <td onclick="showForm()">
-            <img src="./pics/temptest2.jpg" />
+          <td id="4" onclick="showForm(this)">
+            <img class="tabel-img" src="./pics/temptest2.jpg" />
           </td>
         </tr>
       </table>
@@ -146,20 +140,6 @@
       </div>
       <button id="btn" onclick="showTemplate()">Submit</button>
     </div>
-<<<<<<< HEAD
-    <div id="company-infos">
-      <div id="desc-container">
-        <div>
-          <h1 id="cnID-template"></h1>
-          <p id="desID-template"></p>
-        </div>
-        <img id="imgID-template" src="#" />
-      </div>
-      <p id="servID-template"></p>
-    </div>
-=======
-
->>>>>>> 308cd5bf171e70461ca7a765bbdc333f41107bb7
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
