@@ -125,13 +125,15 @@ li a:hover {
 }
 /*caroussel style*/
 .slideImg {
-  width: 80%;
+  width: 75%;
   max-height: 600px;
+  margin-left: 210px;
 }
 #caroussel-container {
   max-width: 1300px;
   position: relative;
-  margin: auto;
+  /* margin: auto; */
+  margin-left: 400px;
 }
 .myslide {
   display: none;

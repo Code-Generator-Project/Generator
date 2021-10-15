@@ -9,7 +9,7 @@
   <body>
     <link rel="stylesheet" href="/style.css" /><!-- Nav barre -->
     <ul>
-      <li><a class="active" href="#home" onclick="changeStyle(0)">Home</a></li>
+      <li><a class="active" href="#home" onclick="goHome(0)">Home</a></li>
       <li>
         <a class="nav" href="#news" id="terma" onclick="getClass()">About</a>
       </li>
@@ -22,6 +22,7 @@
       <div id="desc-container">
         <div class="leftDIv">
           <h1 id="cnID-template"></h1>
+          <div class="text-label">Description</div>
           <p id="desID-template"></p>
           <img id="imgID-template" src="" />
         </div>
@@ -40,28 +41,28 @@
         <img
           class="slideImg"
           id="img1"
-          src="https://colorlib.com/wp/wp-content/uploads/sites/2/featured_electrician-website-templates.jpg"
+          src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
         />
       </div>
       <div class="myslide fade">
         <img
           class="slideImg"
           id="img2"
-          src="https://uicookies.com/wp-content/uploads/2019/10/free-travel-agency-website-templates-1000x750.jpg"
+          src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
         />
       </div>
       <div class="myslide fade">
         <img
           class="slideImg"
           id="img3"
-          src="https://citronfrappe.fr/wp-content/uploads/2018/10/b5beb066-d600-43cd-88d4-f8d4f08ab359.jpeg"
+          src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
         />
       </div>
       <div class="myslide fade">
         <img
           class="slideImg"
           id="img4"
-          src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/c4b12722f50791fe162dd5a27afa217ced8d5bd6b10d8d1c80e5ad0490eff63f1622375935018.jpg"
+          src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
         />
       </div>
     </div>
@@ -71,18 +72,18 @@
       <table style="width: 150px">
         <tr>
           <td onclick="showForm()">
-            <img src="./pics/templats/template1.jpg" />
+            <img src="./pics/ourTemplate1.jpg" />
           </td>
           <td onclick="showForm()">
-            <img src="./pics/templats/template2.jpg" />
+            <img src="./pics/ourtemplate2.jpg" />
           </td>
         </tr>
         <tr>
           <td onclick="showForm()">
-            <img src="./pics/templats/template3.jpg" />
+            <img src="./pics/temptest1.jpg" />
           </td>
           <td onclick="showForm()">
-            <img src="./pics/templats/template3.jpg" />
+            <img src="./pics/temptest2.jpg" />
           </td>
         </tr>
       </table>

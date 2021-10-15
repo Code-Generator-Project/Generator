@@ -12,7 +12,7 @@ body {
   background-color: rgb(189, 122, 122);
   color: white;
   width: 400px;
-  height: 700px;
+  height: 730px;
   margin-bottom: 200px;
   margin-left: 80px;
   text-align: center;
@@ -39,6 +39,10 @@ body {
   border: #ffffff solid 3px;
   margin-left: 25px;
   border-radius: 15px;
+}
+.text-label {
+  font-weight: bold;
+  margin-left: -180px;
 }
 
 p {
