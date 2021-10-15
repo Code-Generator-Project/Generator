@@ -1,6 +1,10 @@
 body {
   max-width: 100%;
-  background-image: linear-gradient(to bottom right, #39a0db, rgb(0, 172, 134));
+  background-image: linear-gradient(
+    to bottom right,
+    #39a0db,
+    rgb(66, 223, 189)
+  );
   background-size: cover;
   background-attachment: fixed;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -26,7 +30,7 @@ img {
 }
 table {
   padding: 2vw;
-  margin-left: 14vw;
+  margin-left: 4vw;
 }
 td,
 tr {
@@ -77,7 +81,7 @@ li a:hover {
 /* form */
 .form-container {
   text-align: center;
-  margin-top: 3%;
+  margin-top: -10px;
   margin-bottom: 8%;
   margin-right: 35%;
   background-color: rgb(48, 48, 48);
@@ -121,11 +125,11 @@ li a:hover {
 }
 /*caroussel style*/
 .slideImg {
-  width: 100%;
+  width: 80%;
   max-height: 600px;
 }
 #caroussel-container {
-  max-width: 1500px;
+  max-width: 1300px;
   position: relative;
   margin: auto;
 }
