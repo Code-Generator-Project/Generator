@@ -10,38 +10,57 @@
     <link rel="stylesheet" href="/style.css" /><!-- Nav barre -->
     <ul>
       <li><a class="active" href="#home" onclick="changeStyle(0)">Home</a></li>
-      <li><a class="nav" href="#news">About</a></li>
+      <li>
+        <a class="nav" href="#news" id="terma" onclick="getClass()">About</a>
+      </li>
       <li><a class="nav" href="#news">Packs</a></li>
       <li><a class="nav" href="#contact">Contact</a></li>
     </ul>
     <h1></h1>
+    <!-- result template container -->
+    <div id="company-infos">
+      <div id="desc-container">
+        <div class="leftDIv">
+          <h1 id="cnID-template"></h1>
+          <p id="desID-template"></p>
+          <img id="imgID-template" src="" />
+        </div>
+      </div>
+      <div>
+        <p id="servID-template"></p>
+      </div>
+      <button type="button" id="getcode" onclick="generateCode()">
+        Get website HTML code
+      </button>
+      <div id="code-container"></div>
+    </div>
     <!-- caroussel-container -->
     <div id="caroussel-container">
       <div class="myslide fade">
-        <div class="number-img">1 / 4</div>
         <img
           class="slideImg"
+          id="img1"
           src="https://colorlib.com/wp/wp-content/uploads/sites/2/featured_electrician-website-templates.jpg"
         />
       </div>
       <div class="myslide fade">
-        <div class="number-img">2 / 4</div>
         <img
           class="slideImg"
+          id="img2"
           src="https://uicookies.com/wp-content/uploads/2019/10/free-travel-agency-website-templates-1000x750.jpg"
         />
       </div>
       <div class="myslide fade">
-        <div class="number-img">3 / 4</div>
         <img
           class="slideImg"
+          id="img3"
           src="https://citronfrappe.fr/wp-content/uploads/2018/10/b5beb066-d600-43cd-88d4-f8d4f08ab359.jpeg"
         />
       </div>
       <div class="myslide fade">
-        <div class="number-img">4 / 4</div>
         <img
           class="slideImg"
+          id="img4"
           src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/c4b12722f50791fe162dd5a27afa217ced8d5bd6b10d8d1c80e5ad0490eff63f1622375935018.jpg"
         />
       </div>
@@ -68,6 +87,7 @@
         </tr>
       </table>
     </div>
+    <!-- input form container -->
     <div class="form-container">
       <div>
         <label><b>Company Name</b></label
@@ -120,8 +140,12 @@
       <div>
         <input id="car3ID" class="input" type="text" placeholder="Image3 src" />
       </div>
-      <button id="btn">Submit</button>
+      <div>
+        <input id="car4ID" class="input" type="text" placeholder="Image3 src" />
+      </div>
+      <button id="btn" onclick="showTemplate()">Submit</button>
     </div>
+<<<<<<< HEAD
     <div id="company-infos">
       <div id="desc-container">
         <div>
@@ -132,6 +156,9 @@
       </div>
       <p id="servID-template"></p>
     </div>
+=======
+
+>>>>>>> 308cd5bf171e70461ca7a765bbdc333f41107bb7
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
