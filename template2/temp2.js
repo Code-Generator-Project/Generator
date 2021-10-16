@@ -1,5 +1,5 @@
 var slideIndex = 0;
-showSlides();
+showSlides();;
 
 $(".form-container").hide();
 function style1() {
